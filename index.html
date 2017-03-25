@@ -4,21 +4,38 @@
             <link rel="stylesheet" href="styles.css" />
         </head>
         <body>
-            <img src="https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png">
+            <form name="Show">
+                X <input type="text" name="MouseX" value="0" size="4"><br>
+                Y <input type="text" name="MouseY" value="0" size="4"><br>
+            </form>
+            <script language="JavaScript1.2">
+                var IE = document.all?true:false;
+                if (!IE) document.captureEvents(Event.MOUSEMOVE){
+                document.onmousemove = getMouseXY;
+                var tempX = 0;
+                var tempY = 0;
+                function getMouseXY(e) {
+                if (IE) { // grab the x-y pos.s if browser is IE
+                tempX = event.clientX + document.body.scrollLeft;
+                tempY = event.clientY + document.body.scrollTop;
+                }
+                else {  // grab the x-y pos.s if browser is NS
+                tempX = e.pageX;
+                tempY = e.pageY;
+                }  
+                if (tempX < 0){tempX = 0;}
+                if (tempY < 0){tempY = 0;}  
+                document.Show.MouseX.value = tempX;
+                document.Show.MouseY.value = tempY;
+                return true;
+                }
+            </script>
+            <img src="https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png" id = "pic1">
             <h1> Prophet Orpheus</h1>
             <p>Coder Dino </p>
+            <img src="http://68.media.tumblr.com/3212319a61abc719aa997fb3a337733a/tumblr_mjojyjw6wS1rfjowdo1_500.gif" id ="pic2">
             <p>Will code for food</p>
             
-            <style>
-                #pic1{position:absolute;}
-            </style>
-            <script>
-                function trackit(){
-                    document.all.pic1.style.left = event.x
-                    document.all.pic1.style.top = event.y
-                    }
-                    document.onmousemove = trackit
-            </script>
-            <img src="http://68.media.tumblr.com/9fe5fb32e8479ea045b8b930642268e4/tumblr_inline_nzqus8XBH41t78dpp_500.gif" id="pic1">
+        
         </body>
 </html>
