@@ -5,6 +5,9 @@ img {
     filter: alpha(opacity=50);
 
 }
+
+
+
 img:hover{
     opacity: 1.0;
     filter: alpha(opacity=100);
@@ -14,7 +17,8 @@ img:hover{
 h1{
 height: 40px;
 }
-
+ 
+ 
 
 body{
 
@@ -27,7 +31,7 @@ body{
     background-size: 100%;
     color: MintCream;
     cursor: url(http://68.media.tumblr.com/7d5e5c8b75fa30db920a5a4357c6a711/tumblr_inline_n85gn1kVeU1reem51.gif), auto;
-    
+   
 }
 
 body:hover{
@@ -96,4 +100,3 @@ p3:hover{
 }
 
 
- 
