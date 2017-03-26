@@ -1,11 +1,15 @@
 img {
-    width: 100px;
+     width: inherit;
+    height: inherit;
 }
 
 body{
-    max-width: 1000px;
-    max-height: 1000px;
-    text-align: justify;
+    
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
     font-family: "Comic Sans MS";
     background-image: url("clouds.png");
     background-repeat: no-repeat;
@@ -14,6 +18,7 @@ body{
     background-size: cover;
     cursor: url(http://68.media.tumblr.com/7d5e5c8b75fa30db920a5a4357c6a711/tumblr_inline_n85gn1kVeU1reem51.gif), auto;
 }
+
 
 
 
