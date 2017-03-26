@@ -7,6 +7,13 @@ body{
     font-family: "Comic Sans MS";
     background-image: url("night.gif");
     background-repeat: no-repeat;
+ 
+}
 
+#img.source-image {
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0; 
 }
 
