@@ -26,6 +26,18 @@ body{
 body:hover{
 color: white;
 }
+p:hover{
+color: beige;
+}
+p1:hover{
+    color: palegoldenrod;
+}
+p2:hover{
+    color:lightgoldenrodyellow;
+}
+p3:hover{
+    color:mistyrose;
+}
 
 
 .dropbtn {
